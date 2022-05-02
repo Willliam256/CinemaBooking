@@ -4,11 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Andriod With Kotlin/Kotlin Progress Programs/CinemaBooking/app/src/main/res/drawable/background_gradient.xml" value="0.1185" />
+        <entry key="..\:/Andriod With Kotlin/Kotlin Progress Programs/CinemaBooking/app/src/main/res/drawable/backgrounds.xml" value="0.1185" />
+        <entry key="..\:/Andriod With Kotlin/Kotlin Progress Programs/CinemaBooking/app/src/main/res/drawable/ic_star_background.xml" value="0.1185" />
+        <entry key="..\:/Andriod With Kotlin/Kotlin Progress Programs/CinemaBooking/app/src/main/res/drawable/ic_star_foreground.xml" value="0.1185" />
         <entry key="..\:/Andriod With Kotlin/Kotlin Progress Programs/CinemaBooking/app/src/main/res/layout/activity_main.xml" value="0.2734375" />
         <entry key="..\:/Andriod With Kotlin/Kotlin Progress Programs/CinemaBooking/app/src/main/res/layout/activity_watch_trailor.xml" value="0.2708333333333333" />
         <entry key="..\:/Andriod With Kotlin/Kotlin Progress Programs/CinemaBooking/app/src/main/res/layout/movie_details_layout.xml" value="0.264" />
         <entry key="..\:/Andriod With Kotlin/Kotlin Progress Programs/CinemaBooking/app/src/main/res/layout/movie_row_layout.xml" value="0.2708333333333333" />
         <entry key="..\:/Andriod With Kotlin/Kotlin Progress Programs/CinemaBooking/app/src/main/res/layout/watch_trialor_layout.xml" value="0.2708333333333333" />
+        <entry key="..\:/Andriod With Kotlin/Kotlin Progress Programs/CinemaBooking/app/src/main/res/mipmap-anydpi-v26/ic_star.xml" value="0.176" />
       </map>
     </option>
   </component>

@@ -4,10 +4,13 @@
         <shape>
             <gradient
                 android:startColor="@color/black"
-                android:endColor="@color/white"
+                android:endColor="@color/black"
                 android:angle="90"
                 android:centerColor="@color/white">
             </gradient>
+            <stroke
+                android:width=".01dp"
+                android:color="@color/dark_yellow"/>
         </shape>
     </item>
 </selector>

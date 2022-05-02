@@ -19,16 +19,20 @@ class MainActivity : AppCompatActivity() {
 
         //Data Source
         val imageId = intArrayOf(
-            R.drawable.ww, R.drawable.newskull, R.drawable.me
+            R.drawable.gerard_bg, R.drawable.avatar_bg, R.drawable.the_matrix_bg, R.drawable.venom_bg, R.drawable.force_of_naturebg,
+            R.drawable.timeless_bg, R.drawable.boss_level_bg, R.drawable.black_adam_bg
         )
-        val background = intArrayOf(
+        val moviePoster = intArrayOf(
+            R.drawable.gerard_butler, R.drawable.avatar_2, R.drawable.the_matrix, R.drawable.venom, R.drawable.force_of_nature,
+            R.drawable.timeless, R.drawable.boss_level, R.drawable.black_dam
 
         )
         val title = arrayOf(
-            "Wonder Woman", "King Kong", "William Is Back"
+            "Greenland", "Avatar-2", "The Matrix", "Venom", "Force Of Nature", "Timeless", "Boss Level", "Black Adam"
         )
         val subtitle = arrayOf(
-            "Never Play with a woman", "Skull has fallen", "William just looking for his mum"
+            "Gerard Butler", "The Way Of Avatar", "Resurrection", "Pop Culture Time", "When The Perfect Crime Meets The Perfect Storm",
+            "Take A Timeless Journey With The Latest Time Travel", "Running Out Of Times And Lives", "Black Adam"
         )
 
         recycleView = findViewById(R.id.recyclerview)
@@ -54,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                 i.putExtra("title", movieArrayList[position].movieTitle)
                 i.putExtra("subtitle", movieArrayList[position].movieSubtitle)
                 i.putExtra("bgImage", movieArrayList[position].image)
-                //i.putExtra("bgImage2", movieArrayList[position].image)
+                i.putExtra("moviePoster", moviePoster[position])
                 startActivity(i)
             }
 

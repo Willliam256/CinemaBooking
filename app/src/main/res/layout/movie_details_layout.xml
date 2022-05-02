@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.4"/>
+            app:layout_constraintGuide_percent="0.35"/>
 
         <RelativeLayout
             android:id="@+id/bg_image2"
@@ -37,6 +37,7 @@
             android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:background="@drawable/backgrounds"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -45,18 +46,18 @@
             app:layout_constraintVertical_bias="0.0">
 
             <LinearLayout
-                android:layout_width="230dp"
-                android:layout_height="130dp"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginStart="178dp"
+                android:layout_marginStart="160dp"
                 android:layout_marginTop="3dp"
                 android:layout_marginEnd="3dp"
                 android:layout_marginBottom="3dp"
                 android:orientation="vertical"
-                android:padding="8dp">
+                android:padding="4dp">
 
                 <TextView
                     android:id="@+id/detail_title"
@@ -64,77 +65,134 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/aladin"
                     android:text="Kong: Skull Island"
-                    android:textColor="@color/black"
-                    android:textSize="25sp" />
+                    android:textColor="@color/text"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/detail_subtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/tillana"
                     android:text="2017 - Adventure"
-                    android:textSize="18sp" />
+                    android:textColor="@color/light_yellow"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="2017 - Adventure"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/abel"
                     android:text="2hr 39min"
-                    android:textSize="15sp" />
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="21.03.2022, Friday"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/abel"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="6dp"
-                android:layout_marginTop="130dp"
-                android:layout_marginEnd="6dp"
+                android:layout_marginTop="120dp"
                 android:orientation="vertical"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/aladin"
-                    android:text="Actors"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
+                android:padding="5dp">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginEnd="20dp"
-                        android:src="@drawable/ww" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginEnd="20dp"
-                        android:src="@drawable/me" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="3dp"
+                            android:fontFamily="@font/aladin"
+                            android:text="Actors"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginEnd="20dp"
-                        android:src="@drawable/oip" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginEnd="10dp"
+                                android:src="@drawable/ww" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginEnd="10dp"
+                                android:src="@drawable/me" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginEnd="10dp"
+                                android:src="@drawable/oip" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="5dp">
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/gold"
+                            android:fontFamily="@font/tillana"
+                            android:text="Watch Trailer"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/light_gold"
+                            android:fontFamily="@font/tillana"
+                            android:text="Movie Ticket"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
                 </LinearLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:alpha="0.4"
+                    android:background="@color/black"
                     android:orientation="vertical"
                     android:padding="10dp">
 
@@ -144,8 +202,8 @@
                         android:layout_gravity="center"
                         android:fontFamily="@font/aladin"
                         android:text="Story Line"
-                        android:textColor="@color/black"
-                        android:textSize="18sp"
+                        android:textColor="@color/text"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <ScrollView
@@ -164,6 +222,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                android:textColor="@color/white"
                                 android:textSize="15sp" />
                         </LinearLayout>
                     </ScrollView>
@@ -174,21 +233,20 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/bg_image"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
+            android:id="@+id/movie_poster"
+            android:layout_width="140dp"
+            android:layout_height="170dp"
             android:layout_marginStart="4dp"
             android:layout_marginBottom="-200dp"
-            android:background="@drawable/skull2"
+            android:background="@drawable/timeless"
             app:layout_constraintBottom_toTopOf="@+id/guide_line"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/bg_image2"
-            app:layout_constraintVertical_bias="0.74">
+            app:layout_constraintVertical_bias="0.68">
 
         </RelativeLayout>
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

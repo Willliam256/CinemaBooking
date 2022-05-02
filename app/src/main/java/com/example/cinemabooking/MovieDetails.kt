@@ -18,15 +18,11 @@ class MovieDetails : AppCompatActivity() {
         val title = intent.getStringExtra("title")
         val subtitle = intent.getStringExtra("subtitle")
         val bgImage = intent.getIntExtra("bgImage", R.drawable.me)
-        //val bgImage2 = intent.getIntExtra("bgImage2", R.drawable.me)
+        val moviePoster = intent.getIntExtra("moviePoster", R.drawable.me)
 
         findViewById<TextView>(R.id.detail_title).text = title
         findViewById<TextView>(R.id.detail_subtitle).text = subtitle
         findViewById<RelativeLayout>(R.id.bg_image2).setBackgroundResource(bgImage)
-        //findViewById<ImageView>(R.id.bg_image2).setImageResource(bgImage)
-
-
-
-
+        findViewById<RelativeLayout>(R.id.movie_poster).setBackgroundResource(moviePoster)
     }
 }
